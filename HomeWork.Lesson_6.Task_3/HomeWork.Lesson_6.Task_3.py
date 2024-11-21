@@ -6,15 +6,17 @@ a = int(input("Введите число 'A': "))
 b = int(input("Введите число 'B': "))
 print()
 print("Ваши числа: ", a, "и", b)
-
+print()
+print("Результат: ")
 if a <= b and a > 0 and b != 0: # условие если в числах нет ноля
     for i in range(a, b + 1):
         if i % 2 == 0:
             print(i, end = " ")
 elif a <= b and a == 0 and b != 0: # условие если в числах есть ноль
     for i in range(a + 1, b + 1):
-        if i % 2 == 0:
+        if i % 2 == 0:            
             print(i, end = " ")
 else:
     print()
     print("Число введено не верно!")
+    print()
